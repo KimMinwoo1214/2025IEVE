@@ -8,43 +8,41 @@ import torch
 from ultralytics import YOLO
 from sensor_msgs.msg import LaserScan, CompressedImage
 from visualization_msgs.msg import Marker, MarkerArray
-from std_msgs.msg import String
 from cv_bridge import CvBridge
 import time
 from scipy.spatial import KDTree
 from math import cos, sin
 
-# 학습데이터 정보
-con = 0  # 라바콘
+# ✅ YOLO 학습된 클래스 ID (라바콘 & PE드럼)
+cone = 0  # 라바콘
 drum = 1  # PE드럼
 
-# con 거슬려서 cone으로 바꿈
+# ✅ YOLO 클래스 → ROS에서 사용하는 이름으로 변환
 CLASS_MAPPING = {
-    con: "cone",
+    cone: "cone",
     drum: "drum"
 }
 
-# 하이퍼파라미터: 바운딩 박스에서 사용할 높이 비율 (0.0 = 아래, 1.0 = 꼭대기)
+# ✅ 바운딩 박스에서 사용할 높이 비율 (0.0 = 바닥, 1.0 = 꼭대기)
 HEIGHT_RATIO = 0.3  # 0.0 ~ 1.0
 
 class ConeDrumDetection:
     def __init__(self):
         rospy.init_node('cone_drum_detector', anonymous=True)
 
-        # ROS 파라미터에서도 높이 비율 설정 가능하게 해둠
+        # ROS 파라미터에서 높이 비율을 조정 가능하도록 설정
         self.height_ratio = rospy.get_param("~height_ratio", HEIGHT_RATIO)
 
         # 퍼블리셔
-        self.result_publish = rospy.Publisher("/detection_result", String, queue_size=10)
         self.visualization_publish = rospy.Publisher("/yolo_viz", MarkerArray, queue_size=10)
+        self.image_pub = rospy.Publisher("/yolo_debug", CompressedImage, queue_size=10)  # ✅ SSH 대비 디버깅용
 
         # 섭스크라이버
-        ################ 이미지 토픽 뭔지 확인하기
-        # self.image_sub = rospy.Subscriber("/image_jpeg/compressed", CompressedImage, self.image_callback, queue_size=10)
-        self.lidar_sub = rospy.Subscriber("/point_cloud", LaserScan, self.lidar_callback)
+        self.image_sub = rospy.Subscriber("/image_jpeg/compressed", CompressedImage, self.image_callback, queue_size=10)
+        self.lidar_sub = rospy.Subscriber("/scan", LaserScan, self.lidar_callback)  # ✅ 2D LiDAR 사용
 
         # YOLO 모델 로드
-        self.model = YOLO('/home/user/YOLO_ws/weights/YOLO_0216.pt') ################ 경로 수정하기
+        self.model = YOLO('/home/user/YOLO_ws/weights/YOLO_0216.pt')  # ✅ 경로 수정 필요
 
         # 이미지 및 LiDAR 데이터 저장 변수
         self.bridge = CvBridge()
@@ -82,30 +80,65 @@ class ConeDrumDetection:
         if self.img_bgr is not None:
             self.frame_counter += 1
             if self.frame_counter % self.frame_interval == 0:
-                res = self.model.predict(self.img_bgr)
+                res = self.model.predict(self.img_bgr, stream=True)
                 plots = res[0].plot()
 
                 markers = MarkerArray()
-                detected_classes = set()
 
                 if len(res[0].boxes) > 0:
                     for i, box in enumerate(res[0].boxes):
                         cls = int(box.cls.item())  # YOLO가 예측한 클래스 ID
 
-                        if cls in CLASS_MAPPING:  # 학습된 클래스인지 확인
-                            detected_classes.add(CLASS_MAPPING[cls])
+                        if cls in CLASS_MAPPING:
                             self.create_marker(box, i, CLASS_MAPPING[cls])
-
-                    # 플래닝에서 사용할 객체 타입만 퍼블리시
-                    for detected in detected_classes:
-                        self.signal_publish(detected)
 
                 self.visualization_publish.publish(markers)
 
-                # 디버깅용 YOLO 출력 이미지
-                cv2.imshow("YOLO Detection", plots)
-                cv2.waitKey(1)
+                # ✅ SSH 대비: ROS 토픽으로 YOLO 탐지 결과 퍼블리시
+                msg = self.bridge.cv2_to_compressed_imgmsg(plots)
+                self.image_pub.publish(msg)
 
     def create_marker(self, box, i, class_name):
         """ 감지된 객체에 대한 2D 마커 생성 (하이퍼파라미터 높이 비율 사용) """
-        center_2d_x = box
+        center_2d_x = box.xywh[0, 0].item()
+        center_2d_y = box.xywh[0, 1].item()
+        box_height = box.xywh[0, 3].item()
+
+        # ✅ 바운딩 박스 높이 비율 적용
+        target_y = center_2d_y - (box_height * self.height_ratio)
+
+        # ✅ 최근접 이웃 검색 (YOLO 중심점과 가장 가까운 LiDAR 점 찾기)
+        if self.filtered_points is not None and len(self.filtered_points) > 0:
+            kdtree = KDTree(self.filtered_points)  # LiDAR 데이터를 KDTree로 변환
+            _, index = kdtree.query([center_2d_x, target_y])  # 최근접 LiDAR 포인트 찾기
+            closest_point_2d = self.filtered_points[index]  # 최근접 LiDAR 점
+        else:
+            rospy.logwarn("No valid LiDAR points available.")
+            return  # LiDAR 데이터가 없으면 마커를 생성하지 않음
+
+        marker = Marker()
+        marker.header.stamp = rospy.Time.now()
+        marker.header.frame_id = "map"
+        marker.type = Marker.CUBE
+        marker.action = Marker.ADD
+        marker.ns = class_name
+        marker.id = i
+        marker.lifetime = rospy.Duration(3.0)
+
+        # ✅ LiDAR 데이터 기반으로 실제 위치 반영 (Z는 0)
+        marker.pose.position.x = closest_point_2d[0]
+        marker.pose.position.y = closest_point_2d[1]
+        marker.pose.position.z = 0.0  
+
+        marker.scale.x = 0.5
+        marker.scale.y = 0.5
+        marker.scale.z = 0.5 if class_name == "cone" else 0.7
+
+        marker.color.r, marker.color.g, marker.color.b = (1.0, 0.5, 0.0) if class_name == "cone" else (1.0, 0.0, 0.0)
+        marker.color.a = 0.5
+
+        self.visualization_publish.publish(marker)
+
+if __name__ == '__main__':
+    detector = ConeDrumDetection()
+    rospy.spin()
