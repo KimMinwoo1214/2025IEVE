@@ -1,0 +1,31 @@
+/home/kmw/miniconda3/envs/ros2_py310/lib/python3.10/site-packages/setuptools/_distutils/dist.py:268: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/calibration/calibration.egg-info/PKG-INFO
+writing dependency_links to ../../build/calibration/calibration.egg-info/dependency_links.txt
+writing entry points to ../../build/calibration/calibration.egg-info/entry_points.txt
+writing requirements to ../../build/calibration/calibration.egg-info/requires.txt
+writing top-level names to ../../build/calibration/calibration.egg-info/top_level.txt
+reading manifest file '../../build/calibration/calibration.egg-info/SOURCES.txt'
+writing manifest file '../../build/calibration/calibration.egg-info/SOURCES.txt'
+running build
+running build_py
+copying calibration/lidar_to_camera.py -> /home/kmw/2025IEVE/lidar_ws/build/calibration/build/lib/calibration
+copying calibration/projection.py -> /home/kmw/2025IEVE/lidar_ws/build/calibration/build/lib/calibration
+copying calibration/__init__.py -> /home/kmw/2025IEVE/lidar_ws/build/calibration/build/lib/calibration
+copying calibration/camera_node.py -> /home/kmw/2025IEVE/lidar_ws/build/calibration/build/lib/calibration
+copying calibration/lidar_point.py -> /home/kmw/2025IEVE/lidar_ws/build/calibration/build/lib/calibration
+running install
+running install_lib
+running install_data
+copying resource/calibration -> /home/kmw/2025IEVE/lidar_ws/install/calibration/share/ament_index/resource_index/packages
+copying package.xml -> /home/kmw/2025IEVE/lidar_ws/install/calibration/share/calibration
+running install_egg_info
+removing '/home/kmw/2025IEVE/lidar_ws/install/calibration/lib/python3.10/site-packages/calibration-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/calibration/calibration.egg-info to /home/kmw/2025IEVE/lidar_ws/install/calibration/lib/python3.10/site-packages/calibration-0.0.0-py3.10.egg-info
+running install_scripts
+Installing camera script to /home/kmw/2025IEVE/lidar_ws/install/calibration/lib/calibration
+Installing lidar_point script to /home/kmw/2025IEVE/lidar_ws/install/calibration/lib/calibration
+Installing lidar_to_camera script to /home/kmw/2025IEVE/lidar_ws/install/calibration/lib/calibration
+Installing projection script to /home/kmw/2025IEVE/lidar_ws/install/calibration/lib/calibration
+writing list of installed files to '/home/kmw/2025IEVE/lidar_ws/build/calibration/install.log'

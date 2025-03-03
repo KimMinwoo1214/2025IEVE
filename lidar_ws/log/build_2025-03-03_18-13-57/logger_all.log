@@ -1,0 +1,327 @@
+[0.210s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.210s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7a158865de10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a1588747880>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a1588747880>>)
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.292s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kmw/2025IEVE/lidar_ws'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'ros'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['cmake', 'python']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'cmake'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'python'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['python_setup_py']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'python_setup_py'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibration) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibration) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibration) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibration) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibration) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibration) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibration) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibration) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibration) by extension 'ros'
+[0.335s] DEBUG:colcon.colcon_core.package_identification:Package 'src/calibration' with type 'ros.ament_python' and name 'calibration'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/centroids) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/centroids) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/centroids) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/centroids) by extensions ['colcon_pkg']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/centroids) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/centroids) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/centroids) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/centroids) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/centroids) by extension 'ros'
+[0.337s] DEBUG:colcon.colcon_core.package_identification:Package 'src/centroids' with type 'ros.ament_python' and name 'centroids'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_segmentation) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_segmentation) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_segmentation) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_segmentation) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_segmentation) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_segmentation) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_segmentation) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_segmentation) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_segmentation) by extension 'ros'
+[0.340s] DEBUG:colcon.colcon_core.package_identification:Package 'src/laser_segmentation' with type 'ros.ament_cmake' and name 'laser_segmentation'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[0.342s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.343s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.343s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.343s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.343s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.386s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/kmw/2025IEVE/lidar_ws/install
+[0.388s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 292 installed packages in /opt/ros/humble
+[0.391s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'calibration' build argument 'cmake_args' from command line to 'None'
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'calibration' build argument 'cmake_target' from command line to 'None'
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'calibration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'calibration' build argument 'cmake_clean_cache' from command line to 'False'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'calibration' build argument 'cmake_clean_first' from command line to 'False'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'calibration' build argument 'cmake_force_configure' from command line to 'False'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'calibration' build argument 'ament_cmake_args' from command line to 'None'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'calibration' build argument 'catkin_cmake_args' from command line to 'None'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'calibration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.471s] DEBUG:colcon.colcon_core.verb:Building package 'calibration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kmw/2025IEVE/lidar_ws/build/calibration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kmw/2025IEVE/lidar_ws/install/calibration', 'merge_install': False, 'path': '/home/kmw/2025IEVE/lidar_ws/src/calibration', 'symlink_install': False, 'test_result_base': None}
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'centroids' build argument 'cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'centroids' build argument 'cmake_target' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'centroids' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'centroids' build argument 'cmake_clean_cache' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'centroids' build argument 'cmake_clean_first' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'centroids' build argument 'cmake_force_configure' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'centroids' build argument 'ament_cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'centroids' build argument 'catkin_cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'centroids' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.472s] DEBUG:colcon.colcon_core.verb:Building package 'centroids' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kmw/2025IEVE/lidar_ws/build/centroids', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kmw/2025IEVE/lidar_ws/install/centroids', 'merge_install': False, 'path': '/home/kmw/2025IEVE/lidar_ws/src/centroids', 'symlink_install': False, 'test_result_base': None}
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'laser_segmentation' build argument 'cmake_args' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'laser_segmentation' build argument 'cmake_target' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'laser_segmentation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'laser_segmentation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'laser_segmentation' build argument 'cmake_clean_first' from command line to 'False'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'laser_segmentation' build argument 'cmake_force_configure' from command line to 'False'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'laser_segmentation' build argument 'ament_cmake_args' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'laser_segmentation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'laser_segmentation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.473s] DEBUG:colcon.colcon_core.verb:Building package 'laser_segmentation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kmw/2025IEVE/lidar_ws/build/laser_segmentation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation', 'merge_install': False, 'path': '/home/kmw/2025IEVE/lidar_ws/src/laser_segmentation', 'symlink_install': False, 'test_result_base': None}
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.474s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kmw/2025IEVE/lidar_ws/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2', 'merge_install': False, 'path': '/home/kmw/2025IEVE/lidar_ws/src/sllidar_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.475s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.476s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.477s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kmw/2025IEVE/lidar_ws/src/calibration' with build type 'ament_python'
+[0.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('calibration', 'ament_prefix_path')
+[0.481s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/calibration/share/calibration/hook/ament_prefix_path.ps1'
+[0.482s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kmw/2025IEVE/lidar_ws/install/calibration/share/calibration/hook/ament_prefix_path.dsv'
+[0.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/calibration/share/calibration/hook/ament_prefix_path.sh'
+[0.484s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.485s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.491s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kmw/2025IEVE/lidar_ws/src/centroids' with build type 'ament_python'
+[0.491s] Level 1:colcon.colcon_core.shell:create_environment_hook('centroids', 'ament_prefix_path')
+[0.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/centroids/share/centroids/hook/ament_prefix_path.ps1'
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kmw/2025IEVE/lidar_ws/install/centroids/share/centroids/hook/ament_prefix_path.dsv'
+[0.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/centroids/share/centroids/hook/ament_prefix_path.sh'
+[0.497s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.497s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.504s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kmw/2025IEVE/lidar_ws/src/laser_segmentation' with build type 'ament_cmake'
+[0.504s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kmw/2025IEVE/lidar_ws/src/laser_segmentation'
+[0.504s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.504s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.516s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kmw/2025IEVE/lidar_ws/src/sllidar_ros2' with build type 'ament_cmake'
+[0.516s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kmw/2025IEVE/lidar_ws/src/sllidar_ros2'
+[0.517s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.517s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.116s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kmw/2025IEVE/lidar_ws/src/calibration'
+[1.117s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.118s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.668s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kmw/2025IEVE/lidar_ws/src/centroids'
+[1.670s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.676s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kmw/2025IEVE/lidar_ws/build/laser_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake --build /home/kmw/2025IEVE/lidar_ws/build/laser_segmentation -- -j8 -l8
+[1.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kmw/2025IEVE/lidar_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake --build /home/kmw/2025IEVE/lidar_ws/build/sllidar_ros2 -- -j8 -l8
+[2.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kmw/2025IEVE/lidar_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake --build /home/kmw/2025IEVE/lidar_ws/build/sllidar_ros2 -- -j8 -l8
+[2.105s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kmw/2025IEVE/lidar_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake --install /home/kmw/2025IEVE/lidar_ws/build/sllidar_ros2
+[2.162s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[2.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kmw/2025IEVE/lidar_ws/build/laser_segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake --build /home/kmw/2025IEVE/lidar_ws/build/laser_segmentation -- -j8 -l8
+[2.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kmw/2025IEVE/lidar_ws/build/laser_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake --install /home/kmw/2025IEVE/lidar_ws/build/laser_segmentation
+[2.200s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kmw/2025IEVE/lidar_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake --install /home/kmw/2025IEVE/lidar_ws/build/sllidar_ros2
+[2.229s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2' for CMake module files
+[2.232s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2' for CMake config files
+[2.235s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[2.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[2.239s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[2.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[2.246s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/lib'
+[2.247s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/bin'
+[2.248s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[2.249s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[2.251s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/bin'
+[2.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[2.261s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[2.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[2.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[2.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[2.280s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[2.284s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[2.286s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2' for CMake module files
+[2.291s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2' for CMake config files
+[2.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[2.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[2.298s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[2.301s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[2.304s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/lib'
+[2.305s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/bin'
+[2.305s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[2.307s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[2.309s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/bin'
+[2.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[2.314s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[2.318s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[2.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[2.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[2.328s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kmw/2025IEVE/lidar_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[2.335s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(laser_segmentation)
+[2.338s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation' for CMake module files
+[2.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kmw/2025IEVE/lidar_ws/build/laser_segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake --install /home/kmw/2025IEVE/lidar_ws/build/laser_segmentation
+[2.345s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation' for CMake config files
+[2.348s] Level 1:colcon.colcon_core.shell:create_environment_hook('laser_segmentation', 'cmake_prefix_path')
+[2.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/hook/cmake_prefix_path.ps1'
+[2.353s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/hook/cmake_prefix_path.dsv'
+[2.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/hook/cmake_prefix_path.sh'
+[2.361s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/lib'
+[2.362s] Level 1:colcon.colcon_core.shell:create_environment_hook('laser_segmentation', 'ld_library_path_lib')
+[2.364s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/hook/ld_library_path_lib.ps1'
+[2.368s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/hook/ld_library_path_lib.dsv'
+[2.371s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/hook/ld_library_path_lib.sh'
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/bin'
+[2.375s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/lib/pkgconfig/laser_segmentation.pc'
+[2.377s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/lib/python3.10/site-packages'
+[2.379s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/bin'
+[2.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/package.ps1'
+[2.386s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/package.dsv'
+[2.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/package.sh'
+[2.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/package.bash'
+[2.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/package.zsh'
+[2.401s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/colcon-core/packages/laser_segmentation)
+[2.406s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(laser_segmentation)
+[2.408s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation' for CMake module files
+[2.412s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation' for CMake config files
+[2.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('laser_segmentation', 'cmake_prefix_path')
+[2.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/hook/cmake_prefix_path.ps1'
+[2.421s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/hook/cmake_prefix_path.dsv'
+[2.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/hook/cmake_prefix_path.sh'
+[2.428s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/lib'
+[2.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('laser_segmentation', 'ld_library_path_lib')
+[2.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/hook/ld_library_path_lib.ps1'
+[2.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/hook/ld_library_path_lib.dsv'
+[2.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/hook/ld_library_path_lib.sh'
+[2.437s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/bin'
+[2.438s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/lib/pkgconfig/laser_segmentation.pc'
+[2.440s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/lib/python3.10/site-packages'
+[2.442s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/bin'
+[2.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/package.ps1'
+[2.449s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/package.dsv'
+[2.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/package.sh'
+[2.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/package.bash'
+[2.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/laser_segmentation/package.zsh'
+[2.465s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kmw/2025IEVE/lidar_ws/install/laser_segmentation/share/colcon-core/packages/laser_segmentation)
+[4.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kmw/2025IEVE/lidar_ws/src/centroids': PYTHONPATH=/home/kmw/2025IEVE/lidar_ws/build/centroids/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kmw/2025IEVE/lidar_ws/install/centroids/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/centroids build --build-base /home/kmw/2025IEVE/lidar_ws/build/centroids/build install --record /home/kmw/2025IEVE/lidar_ws/build/centroids/install.log --single-version-externally-managed install_data
+[4.059s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kmw/2025IEVE/lidar_ws/src/calibration': PYTHONPATH=/home/kmw/2025IEVE/lidar_ws/build/calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kmw/2025IEVE/lidar_ws/install/calibration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/calibration build --build-base /home/kmw/2025IEVE/lidar_ws/build/calibration/build install --record /home/kmw/2025IEVE/lidar_ws/build/calibration/install.log --single-version-externally-managed install_data
+[5.475s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/centroids' for CMake module files
+[5.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kmw/2025IEVE/lidar_ws/src/centroids' returned '0': PYTHONPATH=/home/kmw/2025IEVE/lidar_ws/build/centroids/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kmw/2025IEVE/lidar_ws/install/centroids/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/centroids build --build-base /home/kmw/2025IEVE/lidar_ws/build/centroids/build install --record /home/kmw/2025IEVE/lidar_ws/build/centroids/install.log --single-version-externally-managed install_data
+[5.481s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/centroids' for CMake config files
+[5.484s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/centroids/lib'
+[5.484s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/centroids/bin'
+[5.485s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/centroids/lib/pkgconfig/centroids.pc'
+[5.486s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/centroids/lib/python3.10/site-packages'
+[5.487s] Level 1:colcon.colcon_core.shell:create_environment_hook('centroids', 'pythonpath')
+[5.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/centroids/share/centroids/hook/pythonpath.ps1'
+[5.491s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kmw/2025IEVE/lidar_ws/install/centroids/share/centroids/hook/pythonpath.dsv'
+[5.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/centroids/share/centroids/hook/pythonpath.sh'
+[5.496s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/centroids/bin'
+[5.497s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(centroids)
+[5.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/centroids/share/centroids/package.ps1'
+[5.501s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kmw/2025IEVE/lidar_ws/install/centroids/share/centroids/package.dsv'
+[5.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/centroids/share/centroids/package.sh'
+[5.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/centroids/share/centroids/package.bash'
+[5.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/centroids/share/centroids/package.zsh'
+[5.514s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kmw/2025IEVE/lidar_ws/install/centroids/share/colcon-core/packages/centroids)
+[5.562s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/calibration' for CMake module files
+[5.564s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kmw/2025IEVE/lidar_ws/src/calibration' returned '0': PYTHONPATH=/home/kmw/2025IEVE/lidar_ws/build/calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kmw/2025IEVE/lidar_ws/install/calibration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/calibration build --build-base /home/kmw/2025IEVE/lidar_ws/build/calibration/build install --record /home/kmw/2025IEVE/lidar_ws/build/calibration/install.log --single-version-externally-managed install_data
+[5.567s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/calibration' for CMake config files
+[5.570s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/calibration/lib'
+[5.570s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/calibration/bin'
+[5.571s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/calibration/lib/pkgconfig/calibration.pc'
+[5.572s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/calibration/lib/python3.10/site-packages'
+[5.572s] Level 1:colcon.colcon_core.shell:create_environment_hook('calibration', 'pythonpath')
+[5.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/calibration/share/calibration/hook/pythonpath.ps1'
+[5.576s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kmw/2025IEVE/lidar_ws/install/calibration/share/calibration/hook/pythonpath.dsv'
+[5.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kmw/2025IEVE/lidar_ws/install/calibration/share/calibration/hook/pythonpath.sh'
+[5.581s] Level 1:colcon.colcon_core.environment:checking '/home/kmw/2025IEVE/lidar_ws/install/calibration/bin'
+[5.581s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(calibration)
+[5.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/calibration/share/calibration/package.ps1'
+[5.586s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kmw/2025IEVE/lidar_ws/install/calibration/share/calibration/package.dsv'
+[5.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/calibration/share/calibration/package.sh'
+[5.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/calibration/share/calibration/package.bash'
+[5.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/kmw/2025IEVE/lidar_ws/install/calibration/share/calibration/package.zsh'
+[5.596s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kmw/2025IEVE/lidar_ws/install/calibration/share/colcon-core/packages/calibration)
+[5.597s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.599s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.599s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.599s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.624s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.624s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.624s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.685s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.686s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kmw/2025IEVE/lidar_ws/install/local_setup.ps1'
+[5.690s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kmw/2025IEVE/lidar_ws/install/_local_setup_util_ps1.py'
+[5.697s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kmw/2025IEVE/lidar_ws/install/setup.ps1'
+[5.705s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kmw/2025IEVE/lidar_ws/install/local_setup.sh'
+[5.708s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kmw/2025IEVE/lidar_ws/install/_local_setup_util_sh.py'
+[5.711s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kmw/2025IEVE/lidar_ws/install/setup.sh'
+[5.718s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kmw/2025IEVE/lidar_ws/install/local_setup.bash'
+[5.722s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kmw/2025IEVE/lidar_ws/install/setup.bash'
+[5.730s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kmw/2025IEVE/lidar_ws/install/local_setup.zsh'
+[5.735s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kmw/2025IEVE/lidar_ws/install/setup.zsh'

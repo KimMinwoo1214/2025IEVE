@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+0351e286cd4acc0a6c0e1cb7961541c4 CMakeFiles/apriltag_py_docstrings
+63529139e2216016a2856c0bff3b6f76 apriltag_detect_docstring.h
+550c41e4d28291e262730bafc2a96fc2 apriltag_py_type_docstring.h

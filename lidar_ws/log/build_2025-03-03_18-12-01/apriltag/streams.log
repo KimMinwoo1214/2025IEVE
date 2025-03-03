@@ -1,0 +1,127 @@
+[0.115s] Invoking command in '/home/kmw/2025IEVE/lidar_ws/build/apriltag': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake /home/kmw/2025IEVE/lidar_ws/src/apriltag -DCMAKE_INSTALL_PREFIX=/home/kmw/2025IEVE/lidar_ws/install/apriltag
+[1.474s] -- The C compiler identification is GNU 11.4.0
+[1.476s] -- Detecting C compiler ABI info
+[1.477s] -- Detecting C compiler ABI info - done
+[1.477s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.478s] -- Detecting C compile features
+[1.478s] -- Detecting C compile features - done
+[1.479s] -- Setting build type to 'Release' as none was specified.
+[1.479s] -- Looking for pthread.h
+[1.480s] -- Looking for pthread.h - found
+[1.481s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.481s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.482s] -- Found Threads: TRUE  
+[3.421s] -- The CXX compiler identification is GNU 11.4.0
+[3.447s] -- Detecting CXX compiler ABI info
+[3.766s] -- Detecting CXX compiler ABI info - done
+[3.799s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.799s] -- Detecting CXX compile features
+[3.801s] -- Detecting CXX compile features - done
+[3.802s] -- Configuring done
+[3.827s] -- Generating done
+[3.834s] -- Build files have been written to: /home/kmw/2025IEVE/lidar_ws/build/apriltag
+[3.842s] Invoked command in '/home/kmw/2025IEVE/lidar_ws/build/apriltag' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake /home/kmw/2025IEVE/lidar_ws/src/apriltag -DCMAKE_INSTALL_PREFIX=/home/kmw/2025IEVE/lidar_ws/install/apriltag
+[3.845s] Invoking command in '/home/kmw/2025IEVE/lidar_ws/build/apriltag': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake --build /home/kmw/2025IEVE/lidar_ws/build/apriltag -- -j8 -l8
+[3.972s] [  2%] [34m[1mGenerating apriltag_detect_docstring.h, apriltag_detect_docstring.cxx[0m
+[3.974s] [  4%] [32mBuilding C object CMakeFiles/apriltag.dir/apriltag_pose.c.o[0m
+[3.975s] [  7%] [34m[1mGenerating apriltag_py_type_docstring.h, apriltag_py_type_docstring.cxx[0m
+[3.981s] [  9%] [32mBuilding C object CMakeFiles/apriltag.dir/common/getopt.c.o[0m
+[3.984s] [ 12%] [32mBuilding C object CMakeFiles/apriltag.dir/common/g2d.c.o[0m
+[3.996s] [ 14%] [32mBuilding C object CMakeFiles/apriltag.dir/apriltag.c.o[0m
+[4.002s] [ 19%] [32mBuilding C object CMakeFiles/apriltag.dir/apriltag_quad_thresh.c.o[0m
+[4.012s] [ 19%] [32mBuilding C object CMakeFiles/apriltag.dir/common/homography.c.o[0m
+[4.076s] [ 21%] [32mBuilding C object CMakeFiles/apriltag.dir/common/image_u8.c.o[0m
+[4.198s] [ 21%] Built target apriltag_py_docstrings
+[4.242s] [ 24%] [32mBuilding C object CMakeFiles/apriltag.dir/common/image_u8x3.c.o[0m
+[5.516s] [ 26%] [32mBuilding C object CMakeFiles/apriltag.dir/common/image_u8x4.c.o[0m
+[5.775s] [ 29%] [32mBuilding C object CMakeFiles/apriltag.dir/common/matd.c.o[0m
+[5.853s] [ 31%] [32mBuilding C object CMakeFiles/apriltag.dir/common/pam.c.o[0m
+[5.899s] [ 34%] [32mBuilding C object CMakeFiles/apriltag.dir/common/pjpeg-idct.c.o[0m
+[6.077s] [ 36%] [32mBuilding C object CMakeFiles/apriltag.dir/common/pjpeg.c.o[0m
+[6.462s] [ 39%] [32mBuilding C object CMakeFiles/apriltag.dir/common/pnm.c.o[0m
+[6.641s] [ 41%] [32mBuilding C object CMakeFiles/apriltag.dir/common/pthreads_cross.c.o[0m
+[6.797s] [ 43%] [32mBuilding C object CMakeFiles/apriltag.dir/common/string_util.c.o[0m
+[6.959s] [ 46%] [32mBuilding C object CMakeFiles/apriltag.dir/common/time_util.c.o[0m
+[6.977s] [ 48%] [32mBuilding C object CMakeFiles/apriltag.dir/common/svd22.c.o[0m
+[7.330s] [ 51%] [32mBuilding C object CMakeFiles/apriltag.dir/common/unionfind.c.o[0m
+[7.580s] [ 53%] [32mBuilding C object CMakeFiles/apriltag.dir/common/workerpool.c.o[0m
+[7.764s] [ 56%] [32mBuilding C object CMakeFiles/apriltag.dir/common/zarray.c.o[0m
+[8.116s] [ 58%] [32mBuilding C object CMakeFiles/apriltag.dir/common/zhash.c.o[0m
+[8.793s] [ 60%] [32mBuilding C object CMakeFiles/apriltag.dir/common/zmaxheap.c.o[0m
+[8.865s] [ 63%] [32mBuilding C object CMakeFiles/apriltag.dir/tag16h5.c.o[0m
+[9.138s] [ 65%] [32mBuilding C object CMakeFiles/apriltag.dir/tag25h9.c.o[0m
+[9.281s] [ 68%] [32mBuilding C object CMakeFiles/apriltag.dir/tag36h10.c.o[0m
+[9.435s] [ 70%] [32mBuilding C object CMakeFiles/apriltag.dir/tag36h11.c.o[0m
+[9.604s] [ 73%] [32mBuilding C object CMakeFiles/apriltag.dir/tagCircle21h7.c.o[0m
+[9.748s] [ 75%] [32mBuilding C object CMakeFiles/apriltag.dir/tagCircle49h12.c.o[0m
+[9.799s] [ 78%] [32mBuilding C object CMakeFiles/apriltag.dir/tagCustom48h12.c.o[0m
+[10.076s] [ 80%] [32mBuilding C object CMakeFiles/apriltag.dir/tagStandard41h12.c.o[0m
+[10.231s] [ 82%] [32mBuilding C object CMakeFiles/apriltag.dir/tagStandard52h13.c.o[0m
+[11.558s] [ 85%] [32m[1mLinking C shared library libapriltag.so[0m
+[11.826s] [ 85%] Built target apriltag
+[11.880s] [ 92%] [32mBuilding C object CMakeFiles/apriltag_demo.dir/example/apriltag_demo.c.o[0m
+[11.880s] [ 92%] [32mBuilding C object CMakeFiles/apriltag.cpython-310-x86_64-linux-gnu.dir/apriltag_pywrap.c.o[0m
+[11.880s] [ 92%] [32mBuilding CXX object CMakeFiles/opencv_demo.dir/example/opencv_demo.cc.o[0m
+[12.180s] [ 95%] [32m[1mLinking C executable apriltag_demo[0m
+[12.294s] [ 95%] Built target apriltag_demo
+[12.393s] [ 97%] [32m[1mLinking C shared module apriltag.cpython-310-x86_64-linux-gnu.so[0m
+[12.518s] [ 97%] Built target apriltag.cpython-310-x86_64-linux-gnu
+[16.766s] [100%] [32m[1mLinking CXX executable opencv_demo[0m
+[18.747s] [100%] Built target opencv_demo
+[18.798s] Invoked command in '/home/kmw/2025IEVE/lidar_ws/build/apriltag' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake --build /home/kmw/2025IEVE/lidar_ws/build/apriltag -- -j8 -l8
+[18.805s] Invoking command in '/home/kmw/2025IEVE/lidar_ws/build/apriltag': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake --install /home/kmw/2025IEVE/lidar_ws/build/apriltag
+[18.826s] -- Install configuration: "Release"
+[18.826s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/apriltag.h
+[18.827s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/apriltag_math.h
+[18.828s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/apriltag_pose.h
+[18.828s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/debug_print.h
+[18.829s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/doubles.h
+[18.829s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/doubles_floats_impl.h
+[18.830s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/floats.h
+[18.830s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/g2d.h
+[18.831s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/getopt.h
+[18.831s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/homography.h
+[18.832s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/image_types.h
+[18.832s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/image_u8.h
+[18.833s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/image_u8x3.h
+[18.833s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/image_u8x4.h
+[18.834s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/matd.h
+[18.834s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/math_util.h
+[18.835s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/pam.h
+[18.836s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/pjpeg.h
+[18.836s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/pnm.h
+[18.837s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/postscript_utils.h
+[18.838s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/pthreads_cross.h
+[18.838s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/string_util.h
+[18.839s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/svd22.h
+[18.839s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/time_util.h
+[18.840s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/timeprofile.h
+[18.840s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/unionfind.h
+[18.841s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/workerpool.h
+[18.841s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/zarray.h
+[18.842s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/zhash.h
+[18.843s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/common/zmaxheap.h
+[18.843s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/tag16h5.h
+[18.844s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/tag25h9.h
+[18.844s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/tag36h10.h
+[18.845s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/tag36h11.h
+[18.845s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/tagCircle21h7.h
+[18.846s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/tagCircle49h12.h
+[18.846s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/tagCustom48h12.h
+[18.847s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/tagStandard41h12.h
+[18.847s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/include/apriltag/tagStandard52h13.h
+[18.847s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/libapriltag.so.3.4.3
+[18.851s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/libapriltag.so.3
+[18.852s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/libapriltag.so
+[18.852s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/apriltag/cmake/apriltagTargets.cmake
+[18.853s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/apriltag/cmake/apriltagTargets-release.cmake
+[18.853s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/apriltag/cmake/apriltagConfig.cmake
+[18.854s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/apriltag/cmake/apriltagConfigVersion.cmake
+[18.854s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/pkgconfig/apriltag.pc
+[18.855s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/python3.10/site-packages/apriltag.cpython-310-x86_64-linux-gnu.so
+[18.855s] -- Set runtime path of "/home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/python3.10/site-packages/apriltag.cpython-310-x86_64-linux-gnu.so" to ""
+[18.856s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/bin/opencv_demo
+[18.857s] -- Set runtime path of "/home/kmw/2025IEVE/lidar_ws/install/apriltag/bin/opencv_demo" to ""
+[18.857s] -- Installing: /home/kmw/2025IEVE/lidar_ws/install/apriltag/bin/apriltag_demo
+[18.858s] -- Set runtime path of "/home/kmw/2025IEVE/lidar_ws/install/apriltag/bin/apriltag_demo" to ""
+[18.863s] Invoked command in '/home/kmw/2025IEVE/lidar_ws/build/apriltag' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kmw/2025IEVE/lidar_ws/install/centroids:/home/kmw/2025IEVE/lidar_ws/install/centeroids:/home/kmw/2025IEVE/lidar_ws/install/calibration:/opt/ros/humble /usr/bin/cmake --install /home/kmw/2025IEVE/lidar_ws/build/apriltag

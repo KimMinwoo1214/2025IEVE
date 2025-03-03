@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/centroids/centroids.egg-info/PKG-INFO
+writing dependency_links to ../../build/centroids/centroids.egg-info/dependency_links.txt
+writing entry points to ../../build/centroids/centroids.egg-info/entry_points.txt
+writing requirements to ../../build/centroids/centroids.egg-info/requires.txt
+writing top-level names to ../../build/centroids/centroids.egg-info/top_level.txt
+reading manifest file '../../build/centroids/centroids.egg-info/SOURCES.txt'
+writing manifest file '../../build/centroids/centroids.egg-info/SOURCES.txt'
+running build
+running build_py
+copying centroids/centroids_visualize.py -> /home/kmw/2025IEVE/lidar_ws/build/centroids/build/lib/centroids
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/kmw/2025IEVE/lidar_ws/install/centroids/lib/python3.10/site-packages/centroids-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/centroids/centroids.egg-info to /home/kmw/2025IEVE/lidar_ws/install/centroids/lib/python3.10/site-packages/centroids-0.0.0-py3.10.egg-info
+running install_scripts
+Installing centroids_visualize script to /home/kmw/2025IEVE/lidar_ws/install/centroids/lib/centroids
+Installing lr_dis script to /home/kmw/2025IEVE/lidar_ws/install/centroids/lib/centroids
+writing list of installed files to '/home/kmw/2025IEVE/lidar_ws/build/centroids/install.log'

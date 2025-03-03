@@ -1,0 +1,33 @@
+[0.028s] Invoking command in '/home/kmw/2025IEVE/lidar_ws/build/apriltag_ros': CMAKE_PREFIX_PATH=/home/kmw/2025IEVE/lidar_ws/install/apriltag:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/kmw/2025IEVE/lidar_ws/install/apriltag/lib:${LD_LIBRARY_PATH} PATH=/home/kmw/2025IEVE/lidar_ws/install/apriltag/bin:${PATH} PKG_CONFIG_PATH=/home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/x86_64-linux-gnu/pkgconfig:/home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/pkgconfig PYTHONPATH=/home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/kmw/2025IEVE/lidar_ws/src/apriltag_ros/apriltag_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/kmw/2025IEVE/lidar_ws/install/apriltag_ros
+[0.230s] -- The C compiler identification is GNU 11.4.0
+[0.386s] -- The CXX compiler identification is GNU 11.4.0
+[0.409s] -- Detecting C compiler ABI info
+[0.599s] -- Detecting C compiler ABI info - done
+[0.635s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.636s] -- Detecting C compile features
+[0.640s] -- Detecting C compile features - done
+[0.666s] -- Detecting CXX compiler ABI info
+[0.924s] -- Detecting CXX compiler ABI info - done
+[0.957s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.958s] -- Detecting CXX compile features
+[0.960s] -- Detecting CXX compile features - done
+[0.999s] [31mCMake Error at CMakeLists.txt:6 (find_package):
+[1.000s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[1.000s]   asked CMake to find a package configuration file provided by "catkin", but
+[1.000s]   CMake did not find one.
+[1.000s] 
+[1.000s]   Could not find a package configuration file provided by "catkin" with any
+[1.001s]   of the following names:
+[1.001s] 
+[1.001s]     catkinConfig.cmake
+[1.001s]     catkin-config.cmake
+[1.001s] 
+[1.001s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[1.001s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[1.002s]   provides a separate development package or SDK, be sure it has been
+[1.002s]   installed.
+[1.002s] 
+[1.002s] [0m
+[1.002s] -- Configuring incomplete, errors occurred!
+[1.002s] See also "/home/kmw/2025IEVE/lidar_ws/build/apriltag_ros/CMakeFiles/CMakeOutput.log".
+[1.010s] Invoked command in '/home/kmw/2025IEVE/lidar_ws/build/apriltag_ros' returned '1': CMAKE_PREFIX_PATH=/home/kmw/2025IEVE/lidar_ws/install/apriltag:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/kmw/2025IEVE/lidar_ws/install/apriltag/lib:${LD_LIBRARY_PATH} PATH=/home/kmw/2025IEVE/lidar_ws/install/apriltag/bin:${PATH} PKG_CONFIG_PATH=/home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/x86_64-linux-gnu/pkgconfig:/home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/pkgconfig PYTHONPATH=/home/kmw/2025IEVE/lidar_ws/install/apriltag/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/kmw/2025IEVE/lidar_ws/src/apriltag_ros/apriltag_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/kmw/2025IEVE/lidar_ws/install/apriltag_ros
